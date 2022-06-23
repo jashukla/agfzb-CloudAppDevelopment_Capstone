@@ -52,3 +52,9 @@ def get_dealerships(request):
 # def add_review(request, dealer_id):
 # ...
 
+# test view
+def testview(request):
+    context = {}    
+    if request.method == "GET":
+        context['testdata'] = "Jata here"
+        return render(request, 'djangoapp/test.html', context)
