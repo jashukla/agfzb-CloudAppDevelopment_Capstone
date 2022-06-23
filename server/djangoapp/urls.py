@@ -11,12 +11,12 @@ urlpatterns = [
 
     #path for test file
 
-    path(route='', view=views.testview, name='testurl'),
+    path(route='test', view=views.testview, name='testurl'),
 
     # path for about view
-
+    path(route='about', view=views.about, name='abouturl'),
     # path for contact us view
-
+    path(route='contact', view=views.contact, name='contacturl'),
     # path for registration
 
     # path for login
